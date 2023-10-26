@@ -1,0 +1,133 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Guía de Seguridad para BIOS/UEFI y Arranque Seguro en Windows</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14" ga4id=""></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  codelab-ga4id=""
+                  id="naim-bastionado-bios"
+                  title="Guía de Seguridad para BIOS/UEFI y Arranque Seguro en Windows"
+                  environment="web"
+                  feedback-link="Un enlace en el que los usuarios puedan darte feedback (quizás creando un issue en un repositorio de git)">
+    
+      <google-codelab-step label="Introducción" duration="1">
+        <p>Esta guía tiene como objetivo proporcionar información sobre cómo proteger la BIOS/UEFI y habilitar el arranque seguro en Windows. También discutiremos las contraseñas y la seguridad del sistema operativo. Esta guía es útil tanto para principiantes como para aquellos con experiencia limitada en seguridad de sistemas.</p>
+<p class="image-container"><img alt="Bastionado Windows" src="img\\46f229e65cabf420.jpeg"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Sección 1: Seguridad de la BIOS/UEFI" duration="0">
+        <p>La BIOS (también conocida como UEFI) es un componente esencial de cualquier sistema operativo porque controla el arranque y la configuración del hardware. En esta sección, hablaremos sobre cómo proteger la BIOS/UEFI y garantizar que los ajustes de sistema críticos estén seguros. Aprenderás cómo establecer contraseñas, evitar restablecimientos <strong>no autorizados</strong> y mejorar la seguridad de esta parte importante de tu computadora. <img alt="Bastionado Windows" src="img\\3bb87b962e572a73.jpeg"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 1: Acceso a la BIOS/UEFI" duration="2">
+        <ol type="1">
+<li>Reinicia tu computadora y presta atención a la pantalla durante el inicio. Por lo general, muestra una tecla para ingresar a la BIOS/UEFI <strong>(por ejemplo, F2, F12, Del).</strong></li>
+<li>Ingresa a la BIOS/UEFI siguiendo las instrucciones.</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 2: Contraseñas de la BIOS/UEFI" duration="2">
+        <ul>
+<li>Configura una contraseña de administrador de la BIOS/UEFI para evitar cambios no autorizados.</li>
+<li>Configura una contraseña de usuario de la BIOS/UEFI para proteger los ajustes básicos. <img alt="Bastionado Windows" src="img\\4fbf156b4e39aacb.jpg"></li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 3: Contraseña de arranque del dispositivo" duration="2">
+        <p>Si deseas una capa adicional de seguridad, configura una contraseña de arranque del dispositivo. Esto evitará que se inicie el sistema sin la contraseña.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 4: Restablecimiento y Clear CMOS" duration="4">
+        <ul>
+<li>Ten en cuenta que algunos métodos de reinicio pueden anular las contraseñas de la BIOS/UEFI.</li>
+<li>Investiga si tu placa base tiene una opción para evitar el restablecimiento de contraseña.</li>
+</ul>
+<p class="image-container"><img alt="Bastionado Windows" src="img\\d901809b62e749d5.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Sección 2: Arranque seguro" duration="0">
+        <p>El componente crucial del arranque seguro de Windows permite que el sistema no ejecute software no autorizado durante el proceso de inicio. En esta sección, aprenderás sobre el mundo del arranque seguro, que incluye el uso del módulo de plataforma confiable (TPM) y Secure Boot. Instrucciones sobre cómo verificar y habilitar estas características de Windows, que son esenciales para mantener la integridad del sistema operativo, se proporcionarán en este curso. <img alt="Bastionado Windows" src="img\\bfe99e5ab57e4c8e.jpeg"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 1: Habilitar Secure Boot en la BIOS/UEFI" duration="2">
+        <ol type="1">
+<li>Abre <em>Administrador del módulo de plataforma segura </em><strong>(tpm.msc)</strong> en tu sistema Windows.</li>
+<li>Verifica si tu computadora tiene activado el TPM (Compatibilidad con cifrado de dispositivo) y Secure Boot (Estado de arranque seguro).</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 2: Activar Secure Boot" duration="3">
+        <ul>
+<li>Si Secure Boot <strong>no</strong> está habilitado, accede a la BIOS/UEFI siguiendo el Paso 1 de la Sección 1.</li>
+<li>Busca la opción <em>Secure Boot</em> y actívala. Esto ayudará a prevenir la ejecución de software no firmado en el arranque.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 3: Contraseñas de Windows" duration="4">
+        <ol type="1">
+<li>Configura una contraseña sólida para tu cuenta de Windows. <strong>No uses contraseñas obvias o débiles.</strong></li>
+<li>Evita usar preguntas de seguridad débiles para la recuperación de contraseñas.</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Paso 4: Deshabilitar la recuperación de contraseñas de Windows" duration="3">
+        <p>Si deseas mejorar la seguridad, investiga cómo deshabilitar o restringir la recuperación de contraseñas en tu versión de Windows. Esto puede variar según la edición de Windows que estés utilizando. <img alt="Bastionado Windows" src="img\\4361b7ffe528058f.jpeg"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Conclusión" duration="1">
+        <p>Esta guía proporciona los pasos necesarios para mejorar la seguridad de su BIOS UEFI y habilitar el arranque seguro de Windows.Además, enfatiza la importancia de configurar contraseñas fuertes y considerar deshabilitar la recuperación de contraseñas débiles para una mayor seguridad.</p>
+<p>Recuerda que la seguridad nunca es 100% perfecta, tomar medidas como estas puede ayudarlo a proteger su sistema contra accesos no autorizados.</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

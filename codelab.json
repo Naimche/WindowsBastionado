@@ -1,0 +1,24 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2023-10-26T21:36:09+02:00",
+  "id": "naim-bastionado-bios",
+  "duration": 24,
+  "title": "Guía de Seguridad para BIOS/UEFI y Arranque Seguro en Windows",
+  "summary": "Protege tu sistema operativo, tu bios.",
+  "source": "codelab.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "windows"
+  ],
+  "tags": [
+    "windows"
+  ],
+  "feedback": "Un enlace en el que los usuarios puedan darte feedback (quizás creando un issue en un repositorio de git)",
+  "url": "naim-bastionado-bios"
+}
